@@ -1,0 +1,273 @@
+\documentclass{resume} % Uses the custom resume.cls style
+\usepackage[left=0.65in,top=0.8in,right=0.65in,bottom=0.8in]{geometry} % Margins
+
+%------------------------------------------------
+% Font setup — match the classic Computer Modern (Elisa-style)
+%------------------------------------------------
+\usepackage{ifxetex,ifluatex,xcolor}
+\usepackage{needspace}
+
+\ifxetex
+% XeLaTeX: Use a darker serif font than Latin Modern
+\usepackage{fontspec}
+\setmainfont[
+Ligatures=TeX,
+Scale=MatchLowercase
+]{Times New Roman}
+
+\setsansfont{Times New Roman} % matching sans-serif
+\setmonofont{Times New Roman}
+\else
+\ifluatex
+% LuaLaTeX: same setup as XeLaTeX
+\usepackage{fontspec}
+\setmainfont[
+Ligatures=TeX,
+Scale=MatchLowercase
+]{Times New Roman}
+\setsansfont{Times New Roman}
+\setmonofont{Times New Roman}
+\else
+% pdfLaTeX: use heavier Type 1 Computer Modern (default LaTeX look)
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+
+\fi
+\fi
+
+%------------------------------------------------
+% Colors and hyperlinks
+%------------------------------------------------
+\usepackage{xcolor}
+\definecolor{mydarkblue}{RGB}{0,0,150}
+\definecolor{mygray}{RGB}{32,32,32}
+
+\usepackage[
+colorlinks=true,
+linkcolor=black,
+urlcolor=mydarkblue,
+citecolor=black
+]{hyperref}
+
+%------------------------------------------------
+% Helpers
+%------------------------------------------------
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+%------------------------------------------------
+% Name & contact
+%------------------------------------------------
+\name{Yuting Wang}
+\address{
+	\href{mailto:yuting.wang.econ@gmail.com}{yuting.wang.econ@gmail.com} \quad
+	\href{https://sites.google.com/view/yuting-wang}{https://sites.google.com/view/yuting-wang}
+}
+
+\begin{document}
+	
+	%------------------------------------------------
+	% RESEARCH INTERESTS
+	%------------------------------------------------
+	\begin{rSection}{Research Interests}
+	Environmental Economics, Health Economics, Political Economy, Applied Econometrics
+	\end{rSection}
+	
+\vspace{2pt}
+	
+	%------------------------------------------------
+	% CURRENT POSITION
+	%------------------------------------------------
+	\begin{rSection}{Current Position}
+2025--\textcolor{white}{2025} Postdoctoral Researcher, jointly appointed by CESAER (INRAE, Institut Agro Dijon) and GAEL (CNRS, INRAE, Universit\'e Grenoble Alpes)   \hfill
+	\end{rSection}
+	
+\vspace{2pt}
+	
+	%------------------------------------------------
+	% EDUCATION
+	%------------------------------------------------
+\begin{rSection}{Education}
+	2020–2025 \quad Queen Mary University of London, PhD in Economics \\[3pt]
+%	\textcolor{white}{2020–2025} \quad \textit{Supervisors:} Prof. Emmanuel Guerre, Prof. Francesca Cornaglia \\[3pt]
+	2019–2020 \quad Queen Mary University of London, MRes in Economics, \textit{with Distinction} \\[3pt]
+	2018–2019 \quad University of Bath, MRes in Economics, \textit{with Distinction} \\[3pt]	
+	2014–2018 \quad Southwestern University of Finance and Economics, BSc in Economics
+\end{rSection}
+
+	\vspace{2pt}
+
+	
+	\begin{rSection}{Visiting Positions}
+	2023–2024 \quad Imperial College London (hosted by Prof. Shuang Zhang) 
+	\end{rSection}
+	
+\vspace{2pt}
+	
+	%------------------------------------------------
+	% WORKING PAPERS
+	%------------------------------------------------
+	\begin{rSection}{Working Papers}
+		
+		\needspace{9\baselineskip}
+		\textbf{Beliefs, Information Trust, and Air Pollution} \quad \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5648090}{(Job Market Paper)} \\[2pt]
+		\textit{Solo-authored; under review} \\[2pt]
+		This paper examines how the quality of disclosures shapes public trust in official data. Using emission records from Waste-to-Energy plants in China and housing data from 92 cities, I estimate pollution beliefs through a residential sorting model. Households perceive higher and more uncertain emissions when records are flawed, despite technical explanations of the flaws. There is limited evidence of manipulation by plants, suggesting fundamental distrust. The estimated household annual willingness to pay for a one-percentage-point increase in the share of valid emission records is \$1.23. The results show that low-quality disclosure discounts the value of information and erodes information trust.
+		
+		\needspace{8\baselineskip}
+		\textbf{Informal Networks and Collective Environmental Governance: Evidence from China's River Chief System} \\[2pt]
+		\textit{Solo-authored; reject and resubmit, Journal of Environmental Economics and Management} \\[2pt]
+		This paper examines how informal networks affect collective environmental governance when local officials are responsible for shared natural resources. I develop a tournament framework in which officials are evaluated on relative performance while facing cross-jurisdictional spillovers in collective effort. The model shows that placing greater weight on collective performance can increase collective effort provision, but that this effect may be distorted by informal ties among implementing officials. I test these predictions using China's River Chief System, a nationwide water governance reform that assigns officials responsibility for water quality and emphasizes coordination across administrative borders. Combining firm-level pollution records with biographical data on River Chiefs in the Pearl River Basin, I find that the reform reduces water pollution, with larger effects near jurisdictional boundaries. Vertical work ties between city and provincial River Chiefs amplify this pollution-reducing effect and are associated with greater policy effort. By contrast, horizontal hometown and college ties among neighboring city River Chiefs weaken the reform's effectiveness and are negatively associated with cross-border policy effort, especially among officials with stronger promotion incentives. The results show that collective accountability can partially internalize transboundary environmental externalities, but its effectiveness remains constrained by relative-ranking evaluation.
+		
+		
+		\needspace{10\baselineskip}
+		\textbf{Too Hot to Stay? Residential Sorting and Unequal Climate Adaptation} \\[2pt]
+		(with \href{https://sites.google.com/view/helene-bouscasse/accueil?authuser=0}{Hélène Bouscasse}, \href{https://sites.google.com/site/breuillemarie/}{Marie Breuillé}, and \href{https://gael.univ-grenoble-alpes.fr/en/sandrine-mathy}{Sandrine Mathy}) \\[2pt]
+		We study whether residential mobility is an effective margin of adaptation to extreme heat and who benefits. Using French administrative microdata linked to fine scale temperature records, we estimate the causal impact of heatwaves on migration. One additional heatwave day leads to a 0.5 percentage point higher overall likelihood of migration to cooler municipalities. Responses are strongest for short distance moves and moves preserving workplaces, and most moves are between municipalities with similar residential environments. Relocation yields substantial and persistent reductions in exposure, with similar gains across groups among movers. Unequal mobility drives inequality in benefits, as the most responsive 20\% of households capture over 40\% of gains.
+		
+		
+		\needspace{10\baselineskip}
+		\textbf{Aggregating Many Estimators Using Estimated Weights} (with \href{https://eoguerre.github.io/}{Emmanuel Guerre}) \\[2pt]
+		\textit{Under review} \\[2pt]
+		Consider an increasing number of consistent estimators to be averaged when only estimated weights are available. The underlying parameter of interest can be identical across estimators (homogeneity) or not (heterogeneity). The contribution of the paper is threefold. First, it is shown that the interaction of the estimated weights with the estimators can generate specific bias terms. This constrains the number of estimators that can be aggregated when weight estimation is ignored in inference. Second, the paper proposes estimated adaptive weights, which allow for standard Gaussian inference in a uniform manner and are asymptotically optimal both under homogeneity and heterogeneity. Third, conditions ensuring the validity of the Cochran (1937) Q test of homogeneity with estimated variance are given.
+		
+		
+	\end{rSection}
+	
+	
+
+	\vspace{2pt}
+	%------------------------------------------------
+	% WORK IN PROGRESS
+	%------------------------------------------------
+	\begin{rSection}{Selected Work in Progress}
+		
+
+		 
+		 \textbf{Clearing the Air on Used Vehicles} (with \href{https://www.yunyu-shu.com/research/}{Yunyu Shu})
+		 
+		\textbf{Generative AI and the Gender Welfare Gap} (with \href{https://sites.google.com/view/shuangzhang}{Shuang Zhang}, \href{https://sites.google.com/view/rachelngai/home}{Rachel Ngai}, and \href{https://en.saif.sjtu.edu.cn/faculty-research/wu-fei}{Fei Wu})
+
+		\textbf{A Home for Tomorrow: Climate Expectations Revealed by Housing Choices} (with \href{https://sites.google.com/view/helene-bouscasse/accueil?authuser=0}{Hélène Bouscasse})
+		 
+	\end{rSection}
+	
+	\vspace{2pt}
+	%------------------------------------------------
+	% SEMINARS AND CONFERENCES
+	%------------------------------------------------
+	\begin{rSection}{Seminars and Conferences}
+		\begin{tabular}{@{}>{}l@{\hspace{6ex}}p{15.5cm}}
+			2026 & 15th Energy and Climate Economics Conference (TSE); Shanghai University of Finance and Economics; 74th ASFE Annual Congress  \\
+			2025 & ESWC 2025; China SMUE 2025 (PKU); EAERE 2025; IPWSD (Columbia); China Economics Study Group (Warwick); \\
+			2024 & JRD Workshop (UCL); NePE 2024 (Paris 1 Panthéon-Sorbonne); EAERE Summer School; \\
+			2023 & EAERE 2023; RES and SES 2023 Annual Conference;\\
+			2022 & 47th SAEe; ASPEC PhD Conference (Reading); \\
+			2021 & Annual PhD Conference (QMUL)
+		\end{tabular}
+	\end{rSection}
+	
+	
+
+		\vspace{2pt}
+	
+	%------------------------------------------------
+	% REFEREE
+	%------------------------------------------------
+	\begin{rSection}{Referee Activity}
+		Economic Modelling, Economics of Governance
+	\end{rSection}
+	
+
+
+\vspace{2pt}
+
+
+%------------------------------------------------
+% TEACHING EXPERIENCE
+%------------------------------------------------
+\begin{rSection}{Teaching Experience}
+	Teaching Associate at Queen Mary University of London: \\[3pt]
+	\begin{tabular}{@{}l@{\hspace{6ex}}l@{}}
+		2024 & Environmental Economics \\
+		2023, 2024 & World Economy \\
+		2023 & Mathematical Methods in Economics and Finance \\
+		2021, 2023, 2025 & Statistical Methods in Economics \\
+		2021, 2022, 2023 & Elements of Accounting \\
+		2022 & Capital Markets \\
+	\end{tabular}
+\end{rSection}
+
+
+
+\vspace{2pt}
+
+
+%------------------------------------------------
+% RESEARCH EXPERIENCE
+%------------------------------------------------
+\begin{rSection}{Past Research Experience}
+	2022–2025 \quad Research Assistant, Prof. Shuang Zhang (Imperial College London) \\[3pt]
+	2022–2025 \quad Research Assistant, Prof. Douglas Almond (Columbia University) 
+\end{rSection}
+
+
+\vspace{2pt}
+
+	
+	%------------------------------------------------
+	% HONORS AND AWARDS
+	%------------------------------------------------
+	\begin{rSection}{Honors and Awards}
+		\begin{tabular}{@{}l@{\hspace{6ex}}l@{}}
+			2020–2023 & PhD Scholarship, Queen Mary University of London \\
+			2019–2020 & MRes Scholarship, Queen Mary University of London \\
+			2024 & EAERE Summer School Travel Grant \\
+			2022 & SAEe Conference Grant \\
+		\end{tabular}
+	\end{rSection}
+
+	\vspace{2pt}
+
+	
+	%------------------------------------------------
+	% OTHERS
+	%------------------------------------------------
+	\begin{rSection}{Others}
+		\begin{tabular}{@{}>{\bfseries}l@{\hspace{6ex}}l}
+			Additional Training & BSE Summer School, EAERE Summer School \\
+			Software & Stata, ArcGIS, \LaTeX, R \\
+			Language & Chinese (native), Hokkien (native), English (fluent) \\
+			Activities & Organiser, QMUL Economics and Finance Workshop (2023) \\
+			Certificate & CFA Level \uppercase\expandafter{\romannumeral3} Candidate
+		\end{tabular}
+	\end{rSection}
+	
+	\vspace{2pt}
+	
+	%------------------------------------------------
+	% REFERENCES
+	%------------------------------------------------
+	\begin{rSection}{References}
+		
+		\begin{tabular}{@{}p{0.45\textwidth} p{0.45\textwidth}@{}}
+			\textbf{Prof. Francesca Cornaglia} & \textbf{Prof. Emmanuel Guerre} \\
+			School of Economics and Finance, & School of Economics and Finance, \\
+			Queen Mary University of London & Queen Mary University of London \\
+			\href{mailto:f.cornaglia@qmul.ac.uk}{f.cornaglia@qmul.ac.uk} & \href{mailto:e.guerre@qmul.ac.uk}{e.guerre@qmul.ac.uk} \\
+			\\
+			\textbf{Prof. Shuang Zhang} & \textbf{Dr. Hélène Bouscasse} \\
+			Business School, & UMR CESAER, \\
+			Imperial College London & INRAE   \\
+			\href{mailto:s.zhang@imperial.ac.uk}{s.zhang@imperial.ac.uk} & \href{mailto:helene.bouscasse@inrae.fr}{ helene.bouscasse@inrae.fr} \\
+		\end{tabular}
+		
+	\end{rSection}
+	
+%	\vfill
+%	% Uncomment if you want a footer:
+%	 \begin{center}
+%		 \emph{Last updated {\today}}
+%		 \end{center}
+	
+\end{document}
